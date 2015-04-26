@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<body>
+		<label>Name:</label> 
+		<input type="text" 
+			id="uName"
+			placeholder="Enter your name">
+		<hr>
+		<h1>Hello <span id="nameSpan"></span> !</h1>
+		<script>
+			var dom_uName = document.getElementById('uName');
+			var dom_nameSpan = document.getElementById('nameSpan');
+			dom_uName.addEventListener('keyup', function(){
+				//console.log('new Name is "'+ dom_uName.value +'"');
+				dom_nameSpan.innerHTML = dom_uName.value;
+			});
+		</script>
+	</body>
+</html>

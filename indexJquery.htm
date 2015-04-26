@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	</head>
+	<body>
+		<label>Name:</label> 
+		<input type="text" 
+			id="uName"
+			placeholder="Enter your name">
+		<hr>
+		<h1>Hello <span id="nameSpan"></span> !</h1>
+		<script>
+			$('#uName').on('keyup', function(){
+				$('#nameSpan').html($('#uName').val());
+			});
+		</script>
+	</body>
+</html>
